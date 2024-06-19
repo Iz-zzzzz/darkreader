@@ -1,7 +1,7 @@
 <p align="center"><a href="https://darkreader.org" target="_blank" rel="noreferrer noopener"><img width="250" alt="Dark Reader's mascot" src="https://raw.githubusercontent.com/darkreader/darkreader.github.io/master/images/darkreader-mascot.svg"></a></p>
 <p align="center">Dark Reader <strong>analyzes</strong> web pages and aims to <strong>reduce eyestrain</strong> while browsing the web.</p>
 <br/>
-<p align="center"><a rel="noreferrer noopener" href="https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh/"><img alt="Chrome Web Store" src="https://img.shields.io/badge/Chrome-141e24.svg?&style=for-the-badge&logo=google-chrome&logoColor=white"></a>  <a rel="noreferrer noopener" href="https://addons.mozilla.org/firefox/addon/darkreader/"><img alt="Firefox Add-ons" src="https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white"></a>  <a rel="noreferrer noopener" href="https://darkreader.org/safari/"><img alt="Apple App Store" src="https://img.shields.io/badge/Safari-141e24.svg?&style=for-the-badge&logo=safari&logoColor=white"></a>  <a rel="noreferrer noopener" href="https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofpc/"><img alt="Edge Addons" src="https://img.shields.io/badge/Edge-141e24.svg?&style=for-the-badge&logo=microsoft-edge&logoColor=white"></a>  <a el="noreferrer noopener" href="https://addons.thunderbird.net/thunderbird/addon/darkreader"><img alt="Thunderbird" src="https://img.shields.io/badge/Thunderbird-141e24.svg?&style=for-the-badge&logo=thunderbird&logoColor=white"></a>
+<p align="center"><a rel="noreferrer noopener" href="https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh"><img alt="Chrome Web Store" src="https://img.shields.io/badge/Chrome-141e24.svg?&style=for-the-badge&logo=google-chrome&logoColor=white"></a>  <a rel="noreferrer noopener" href="https://addons.mozilla.org/firefox/addon/darkreader/"><img alt="Firefox Add-ons" src="https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white"></a>  <a rel="noreferrer noopener" href="https://darkreader.org/safari/"><img alt="Apple App Store" src="https://img.shields.io/badge/Safari-141e24.svg?&style=for-the-badge&logo=safari&logoColor=white"></a>  <a rel="noreferrer noopener" href="https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofpc/"><img alt="Edge Addons" src="https://img.shields.io/badge/Edge-141e24.svg?&style=for-the-badge&logo=microsoft-edge&logoColor=white"></a>  <a el="noreferrer noopener" href="https://addons.thunderbird.net/thunderbird/addon/darkreader"><img alt="Thunderbird" src="https://img.shields.io/badge/Thunderbird-141e24.svg?&style=for-the-badge&logo=thunderbird&logoColor=white"></a>
 
 <h2 align="center">Dark Reader</h2>
 <br/>
@@ -43,7 +43,7 @@ Please note that if you encounter error `Too many open files (os error 24)`, the
 
 ### Bundling with official Firefox store signatures (experimental)
 
-Prior to publication, extension stores provide digital signatures for extensions. These digital signatures certify the integrity of the archive (that extension bundle did not get corrupted or bit-rotted) and that extension store preformed very basic extension validation.
+Prior to publication, extension stores provide digital signatures for extensions. These digital signatures certify the integrity of the archive (that extension bundle did not get corrupted or bit-rotted) and that extension store performed very basic extension validation.
 
 Dark Reader repository contains these digital signatures and you can add them to the extension bundle. The following will build Dark Reader for Firefox version 4.9.63:
 ```
@@ -147,7 +147,7 @@ Step 1: change Dark Reader's settings.
 - Click on the Dark Reader icon.
 - Click on the `Dev tools` button (in the bottom-right corner).
 - Click on the `Preview new design button`.
-- Enable the `Enable on restricted pages` setting under `Settings` -> `Site list`.
+- Enable the `Enable on restricted pages` setting under `Settings` -> `Advanced`.
 
 Step 2: change Firefox's settings.
 
@@ -155,7 +155,6 @@ Step 2: change Firefox's settings.
 A warning page may appear. Click `Accept the Risk and Continue` to proceed.
 - Search for and set `extensions.webextensions.restrictedDomains` to an empty value.
 - Create `extensions.webextensions.addons-restricted-domains@mozilla.com.disabled` with `boolean` as type and set its value to `true`.
-- Set `extensions.quarantinedDomains.enabled` to `false`.
 - Set `privacy.resistFingerprinting.block_mozAddonManager` to `true`.
 - Restart Firefox.
 
